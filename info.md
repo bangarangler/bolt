@@ -1,0 +1,4 @@
+There are two token types available to a Slack app: user (xoxp) and bot (xoxb) tokens. User tokens allow you to call API methods on behalf of users after they install or authenticate the app. There may be several user tokens for a single workspace. Bot tokens are associated with bot users, and are only granted once in a workspace where someone installs the app. The bot token your app uses will be the same no matter which user performed the installation. Bot tokens are the token type that most apps use.
+
+For brevity, we’re going to use bot tokens for this guide.
+Your app behaves similarly to people on your team — it can post messages, add emoji reactions, and more. To listen for events happening in a Slack workspace (like when a message is posted or when a reaction is posted to a message) you’ll use the Events API to subscribe to event types.
